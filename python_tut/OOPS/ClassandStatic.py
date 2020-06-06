@@ -20,6 +20,13 @@ class Person:
 person1 = Person('mayank', 21) 
 person2 = Person.fromBirthYear('mayank', 1996)
 person3= Person('Anirudh')
+
+'''The setattr() function takes three parameters:
+
+	object - object whose attribute has to be set
+    name - attribute name
+    value - value given to the attribute
+'''
 setattr(person3,'age',30)
 
 print (person1.age)
