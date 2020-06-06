@@ -3,7 +3,7 @@
 from datetime import date 
 
 class Person: 
-	def __init__(self, name, age): 
+	def __init__(self, name=None, age=None):
 		self.name = name 
 		self.age = age 
 	
@@ -18,10 +18,15 @@ class Person:
 		return age > 18
 
 person1 = Person('mayank', 21) 
-person2 = Person.fromBirthYear('mayank', 1996) 
+person2 = Person.fromBirthYear('mayank', 1996)
+person3= Person('Anirudh')
+setattr(person3,'age',30)
 
-print person1.age 
-print person2.age 
+print (person1.age)
+print (person2.age )
+print (person3.age )
+
+
 
 # print the result 
-print Person.isAdult(22) 
+print (Person.isAdult(22) )
